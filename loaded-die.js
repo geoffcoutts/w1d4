@@ -5,6 +5,9 @@ function makeLoadedDie() {
   return function() {
     /* your code here */
     count++;
+    if (count === list.length){
+      count = 0;
+    }
     return list[count];
   };
 }
@@ -14,3 +17,18 @@ var rollLoadedDie = makeLoadedDie();
 console.log(rollLoadedDie());  // 5
 console.log(rollLoadedDie());  // 4
 console.log(rollLoadedDie());  // 6
+console.log(rollLoadedDie());  // 1
+console.log(rollLoadedDie());  // 6
+console.log(rollLoadedDie());  // 4
+console.log(rollLoadedDie());  // 2
+console.log(rollLoadedDie());  // 3
+console.log(rollLoadedDie());  // 3
+console.log(rollLoadedDie());  // 5
+console.log(rollLoadedDie());  // 5
+console.log(rollLoadedDie());  // 4
+console.log(rollLoadedDie());  // 6
+console.log(rollLoadedDie());  // 1
+console.log(rollLoadedDie());  // 6
+console.log(rollLoadedDie());  // 4
+console.log(rollLoadedDie());  // 2
+console.log(rollLoadedDie());  // 3
